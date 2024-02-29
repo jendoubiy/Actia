@@ -58,3 +58,40 @@ spec:
                 port:
                   number: 80
 ```
+# Remote cluster
+
+Create Remote cluster with persistence Volume 
+
+## Creation
+
+```bash
+sudo k3d cluster create remotecluster
+```
+```bash
+export KUBECONFIG=/root/.config/k3d/kubeconfig-remotecluster.yaml
+```
+## Volume
+create Volume.yaml
+```bash
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-volume
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/volume"
+```
+```bash
+sudo kubectl apply -f volume.yaml
+```
+Verification !
+```bash
+sudo kubectl get pv
+```
