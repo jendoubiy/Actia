@@ -100,3 +100,16 @@ Adding helm repo Config to cluster
 ```bash
 export HELM_REPOSITORY_CONFIG=/root/.config/k3d/kubeconfig-remotecluster.yaml
 ```
+installation prometheus using helm 
+```bash
+helm install prometheus prometheus-community/prometheus \
+  --namespace monitoring \
+  --set server.persistence.enabled=true \
+  --set server.persistence.existingClaim=prometheus \
+  --set server.resources.requests.memory="2Gi" \
+  --set server.resources.requests.cpu="1"
+```
+Expose prometheus server 9090
+```bash
+sudo kubectl port-forward prometheus-server-59bb469b7b-6btv9 9090
+```
