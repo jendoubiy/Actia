@@ -91,7 +91,12 @@ spec:
 ```bash
 sudo kubectl apply -f volume.yaml
 ```
+
 Verification !
 ```bash
 sudo kubectl get pv
+```
+Adding helm repo Config to cluster
+```bash
+export HELM_REPOSITORY_CONFIG=/root/.config/k3d/kubeconfig-remotecluster.yaml
 ```
