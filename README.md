@@ -3,8 +3,12 @@
 
 Create cluster 
 ```bash
-k3d cluster create mycluster
+k3d cluster create mycluster --port "80:80@loadbalancer" --port "443:443@loadbalancer"
 ```
+
+> K3D ARGS: --registry-use, --volume
+
+> K3D Registry: k3d registry create NAME --port PORT
 
 Get the new cluster’s connection 
 ```bash
