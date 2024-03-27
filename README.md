@@ -117,3 +117,41 @@ Expose prometheus server 9090
 ```bash
 sudo kubectl port-forward prometheus-server-59bb469b7b-6btv9 9090
 ```
+## Grafana 
+```bash
+sudo helm install my-grafana grafana/grafana
+```
+```bash
+sudo kubectl get secret --namespace default my-grafana -o yaml
+```
+```bash
+echo "PASSWORD" | openssl base64 -d ; echo
+```
+
+## Adding federate Job 
+```bash
+sudo KUBE_EDITOR="nano" kubectl edit cm prometheus-server
+```
+```bash
+    - job_name: federate
+      scrape_interval: 1m
+      honor_labels: true
+      metrics_path: 'federate'
+      params:
+        'match[]':
+          - '{job="kubernetes-pods"}'
+          - '{job="kubernetes-apiservers"}'
+          - '{job="kubernetes-nodes-cadvisor"}'
+          - '{job="kubernetes-nodes"}'
+          - '{job="kubernetes-service-endpoints"}'
+          - '{__name__="cluster_name:.*"}'
+      static_configs:
+      - targets:
+        - '127.0.0.1:9090'
+        - '10.0.2.15:31370'
+```
+```bash
+k3d cluster edit cluster-lb --port-add 31370:31370@server:0
+```
+
+
