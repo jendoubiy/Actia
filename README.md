@@ -231,6 +231,38 @@ k3d cluster edit cluster-lb --port-add 31370:31370@server:0
           annotations:
             summary: Host requires reboot (instance {{ $labels.instance }})
             description: "{{ $labels.instance }} requires a reboot.\n  VALUE = {{ $value }}\n  LABELS = {{ $labels }}"
+        - alert: os_cluster_memory_high
+          expr: sum (container_memory_working_set_bytes{id="/"}) / sum (machine_memory_bytes{}) *100 > 90
+          for: 2m
+          labels:
+            severity: warning
+          annotations:
+            summary: "Cluster memory usage exceeding 90%"
+            description: "Cluster memory usage exceeding 90% for more than 2 minutes."
+        - alert: os_cluster_cpu_high
+          expr: sum (rate (container_cpu_usage_seconds_total{id="/"}[1m])) / sum (machine_cpu_cores) * 100 >= 90
+          for: 2m
+          labels:
+            severity: warning
+          annotations:
+            summary: "Cluster CPU usage exceeding 90%"
+            description: "Cluster CPU usage exceeding 90% for more than 2 minutes."
+        - alert: os_cluster_filesystem_high
+          expr: sum (container_fs_usage_bytes{device=~"^/dev/sd[a-z][1-9]",id="/"}) / sum (container_fs_limit_bytes{device=~"^/dev/sd[a-z][1-9]",id="/"}) * 100 >= 90
+          for: 2m
+          labels:
+            severity: warning
+          annotations:
+            summary: "Cluster filesystem usage exceeding 90%"
+            description: "Cluster filesystem usage exceeding 90% for more than 2 minutes."
+        - alert: os_node_down
+          expr: up{job="kubernetes-nodes"} == 0
+          for: 2m
+          labels:
+            severity: "critical"
+          annotations:
+            summary: "Instance: {{$labels.instance}} is down."
+            description: "Instance: {{$labels.instance}} of job {{ $labels.job }} has been down for more than 2 minutes."
 ```
 
 
