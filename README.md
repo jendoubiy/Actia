@@ -264,5 +264,64 @@ k3d cluster edit cluster-lb --port-add 31370:31370@server:0
             summary: "Instance: {{$labels.instance}} is down."
             description: "Instance: {{$labels.instance}} of job {{ $labels.job }} has been down for more than 2 minutes."
 ```
+## PLAYBOOK
+
+```bash
+- hosts: all
+  become: yes
+  gather_facts: true
+  collections:
+    - kubernetes.core
+
+  tasks:
+  - name: verify ssh connectivity
+    wait_for:
+      host: "{{ansible_host}}"
+      port: 22
+      state: started
+      timeout: 120
+
+  - name: Update apt package cache
+    apt:
+      update_cache: yes
+
+  - name: install dependencies
+    apt:
+      name:
+        - curl
+        - unzip
+      state: present
+
+  - name: Install Docker
+    apt:
+      name: docker.io
+      state: present
+
+  - name: Install Helm
+    kubernetes.core.helm:
+      name: helm
+      state: present
+
+  - name: Install kubectl
+    apt:
+      name: kubectl
+      state: present
+
+  - name: Install k3d
+    shell: curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
+
+  - name: create server cluster
+    shell: k3d cluster create servercluster --port "80:80@loadbalancer"
+
+  - name: Add prometheus chart
+    kubernetes.core.helm_repository:
+      name: prometheus
+      repo_url: https://prometheus-community.github.io/helm-charts
+
+  - name: Add grafana chart
+    kubernetes.core.helm_repository:
+      name: grafana
+      repo_url: grafana https://grafana.github.io/helm-charts
+```
 
 
