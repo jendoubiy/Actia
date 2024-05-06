@@ -264,6 +264,10 @@ k3d cluster edit cluster-lb --port-add 31370:31370@server:0
             summary: "Instance: {{$labels.instance}} is down."
             description: "Instance: {{$labels.instance}} of job {{ $labels.job }} has been down for more than 2 minutes."
 ```
+execute playbook
+```bash
+sudo ansible-playbook playbook.yml --ask-become-pass
+```
 ## PLAYBOOK
 
 ```bash
