@@ -1,0 +1,9913 @@
+{
+
+
+
+  "__inputs": [
+
+
+
+    {
+
+
+
+      "name": "DS_INFINITY-DATASOURCE",
+
+
+
+      "label": "infinity-datasource",
+
+
+
+      "description": "",
+
+
+
+      "type": "datasource",
+
+
+
+      "pluginId": "yesoreyeram-infinity-datasource",
+
+
+
+      "pluginName": "Infinity"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "__elements": {},
+
+
+
+  "__requires": [
+
+
+
+    {
+
+
+
+      "type": "panel",
+
+
+
+      "id": "gauge",
+
+
+
+      "name": "Gauge",
+
+
+
+      "version": ""
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "type": "panel",
+
+
+
+      "id": "geomap",
+
+
+
+      "name": "Geomap",
+
+
+
+      "version": ""
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "type": "grafana",
+
+
+
+      "id": "grafana",
+
+
+
+      "name": "Grafana",
+
+
+
+      "version": "10.4.1"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "type": "panel",
+
+
+
+      "id": "piechart",
+
+
+
+      "name": "Pie chart",
+
+
+
+      "version": ""
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "type": "panel",
+
+
+
+      "id": "stat",
+
+
+
+      "name": "Stat",
+
+
+
+      "version": ""
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "type": "panel",
+
+
+
+      "id": "table",
+
+
+
+      "name": "Table",
+
+
+
+      "version": ""
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "type": "panel",
+
+
+
+      "id": "text",
+
+
+
+      "name": "Text",
+
+
+
+      "version": ""
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "type": "datasource",
+
+
+
+      "id": "yesoreyeram-infinity-datasource",
+
+
+
+      "name": "Infinity",
+
+
+
+      "version": "2.6.3"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "annotations": {
+
+
+
+    "list": [
+
+
+
+      {
+
+
+
+        "builtIn": 1,
+
+
+
+        "datasource": {
+
+
+
+          "type": "grafana",
+
+
+
+          "uid": "-- Grafana --"
+
+
+
+        },
+
+
+
+        "enable": true,
+
+
+
+        "hide": true,
+
+
+
+        "iconColor": "rgba(0, 211, 255, 1)",
+
+
+
+        "name": "Annotations & Alerts",
+
+
+
+        "type": "dashboard"
+
+
+
+      }
+
+
+
+    ]
+
+
+
+  },
+
+
+
+  "editable": true,
+
+
+
+  "fiscalYearStartMonth": 0,
+
+
+
+  "graphTooltip": 0,
+
+
+
+  "id": null,
+
+
+
+  "links": [],
+
+
+
+  "panels": [
+
+
+
+    {
+
+
+
+      "collapsed": false,
+
+
+
+      "gridPos": {
+
+
+
+        "h": 1,
+
+
+
+        "w": 24,
+
+
+
+        "x": 0,
+
+
+
+        "y": 0
+
+
+
+      },
+
+
+
+      "id": 8,
+
+
+
+      "panels": [],
+
+
+
+      "title": "Instance",
+
+
+
+      "type": "row"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "absolute",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "green",
+
+
+
+                "value": null
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "red",
+
+
+
+                "value": 80
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          },
+
+
+
+          "unit": "short"
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 8,
+
+
+
+        "x": 0,
+
+
+
+        "y": 1
+
+
+
+      },
+
+
+
+      "id": 1,
+
+
+
+      "options": {
+
+
+
+        "colorMode": "value",
+
+
+
+        "graphMode": "area",
+
+
+
+        "justifyMode": "center",
+
+
+
+        "orientation": "auto",
+
+
+
+        "reduceOptions": {
+
+
+
+          "calcs": [],
+
+
+
+          "fields": "/^Instance$/",
+
+
+
+          "values": true
+
+
+
+        },
+
+
+
+        "showPercentChange": false,
+
+
+
+        "text": {},
+
+
+
+        "textMode": "auto",
+
+
+
+        "wideLayout": true
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "totalElements",
+
+
+
+              "text": "Instance",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filters": [],
+
+
+
+          "format": "dataframe",
+
+
+
+          "global_query_id": "",
+
+
+
+          "groq": "*",
+
+
+
+          "json_options": {
+
+
+
+            "columnar": false,
+
+
+
+            "root_is_not_array": false
+
+
+
+          },
+
+
+
+          "parser": "simple",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.*",
+
+
+
+          "source": "url",
+
+
+
+          "type": "json",
+
+
+
+          "uql": "parse-json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "headers": [],
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "Product Instance",
+
+
+
+      "type": "stat"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "color": {
+
+
+
+            "mode": "palette-classic"
+
+
+
+          },
+
+
+
+          "custom": {
+
+
+
+            "hideFrom": {
+
+
+
+              "legend": false,
+
+
+
+              "tooltip": false,
+
+
+
+              "viz": false
+
+
+
+            }
+
+
+
+          },
+
+
+
+          "mappings": []
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 16,
+
+
+
+        "x": 8,
+
+
+
+        "y": 1
+
+
+
+      },
+
+
+
+      "id": 20,
+
+
+
+      "options": {
+
+
+
+        "displayLabels": [
+
+
+
+          "percent"
+
+
+
+        ],
+
+
+
+        "legend": {
+
+
+
+          "calcs": [],
+
+
+
+          "displayMode": "table",
+
+
+
+          "placement": "right",
+
+
+
+          "showLegend": true,
+
+
+
+          "values": []
+
+
+
+        },
+
+
+
+        "pieType": "pie",
+
+
+
+        "reduceOptions": {
+
+
+
+          "calcs": [
+
+
+
+            "lastNotNull"
+
+
+
+          ],
+
+
+
+          "fields": "",
+
+
+
+          "values": false
+
+
+
+        },
+
+
+
+        "tooltip": {
+
+
+
+          "mode": "single",
+
+
+
+          "sort": "none"
+
+
+
+        }
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "status",
+
+
+
+              "text": "status",
+
+
+
+              "timestampFormat": "2006-01-02",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filterExpression": "status == \"CLOSED\"",
+
+
+
+          "filters": [],
+
+
+
+          "format": "dataframe",
+
+
+
+          "global_query_id": "",
+
+
+
+          "parser": "backend",
+
+
+
+          "refId": "CLOSED INSTANCE",
+
+
+
+          "root_selector": "$.data[*].content[*].productInstanceInfo[*]",
+
+
+
+          "source": "url",
+
+
+
+          "summarizeExpression": "count(status)",
+
+
+
+          "type": "json",
+
+
+
+          "uql": "parse-json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        },
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "status",
+
+
+
+              "text": "status",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filterExpression": "status == \"ERROR\"",
+
+
+
+          "filters": [],
+
+
+
+          "format": "dataframe",
+
+
+
+          "global_query_id": "",
+
+
+
+          "hide": false,
+
+
+
+          "parser": "backend",
+
+
+
+          "refId": "ERROR INSTANCE",
+
+
+
+          "root_selector": "$.data[*].content[*].productInstanceInfo[*]",
+
+
+
+          "source": "url",
+
+
+
+          "summarizeExpression": "count(status)",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        },
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "status",
+
+
+
+              "text": "status",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filterExpression": "status == \"CANCELLED\"",
+
+
+
+          "filters": [],
+
+
+
+          "format": "dataframe",
+
+
+
+          "global_query_id": "",
+
+
+
+          "hide": false,
+
+
+
+          "parser": "backend",
+
+
+
+          "refId": "CANCELLED INSTANCE",
+
+
+
+          "root_selector": "$.data[*].content[*].productInstanceInfo[*]",
+
+
+
+          "source": "url",
+
+
+
+          "summarizeExpression": "count(status)",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        },
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "status",
+
+
+
+              "text": "status",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filterExpression": "status == \"EXPIRED\"",
+
+
+
+          "filters": [],
+
+
+
+          "format": "dataframe",
+
+
+
+          "global_query_id": "",
+
+
+
+          "hide": false,
+
+
+
+          "parser": "backend",
+
+
+
+          "refId": "EXPIRED INSTANCE",
+
+
+
+          "root_selector": "$.data[*].content[*].productInstanceInfo[*]",
+
+
+
+          "source": "url",
+
+
+
+          "summarizeExpression": "count(status)",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        },
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "status",
+
+
+
+              "text": "status",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filterExpression": "status == \"RUNNING\"",
+
+
+
+          "filters": [],
+
+
+
+          "format": "dataframe",
+
+
+
+          "global_query_id": "",
+
+
+
+          "hide": false,
+
+
+
+          "parser": "backend",
+
+
+
+          "refId": "RUNNING INSTANCE",
+
+
+
+          "root_selector": "$.data[*].content[*].productInstanceInfo[*]",
+
+
+
+          "source": "url",
+
+
+
+          "summarizeExpression": "count(status)",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "INSTANCES STATUS",
+
+
+
+      "type": "piechart"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "custom": {
+
+
+
+            "align": "auto",
+
+
+
+            "cellOptions": {
+
+
+
+              "type": "auto"
+
+
+
+            },
+
+
+
+            "inspect": false
+
+
+
+          },
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "absolute",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "green",
+
+
+
+                "value": null
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "red",
+
+
+
+                "value": 80
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": [
+
+
+
+          {
+
+
+
+            "matcher": {
+
+
+
+              "id": "byName",
+
+
+
+              "options": "File size"
+
+
+
+            },
+
+
+
+            "properties": [
+
+
+
+              {
+
+
+
+                "id": "custom.cellOptions",
+
+
+
+                "value": {
+
+
+
+                  "mode": "gradient",
+
+
+
+                  "type": "gauge",
+
+
+
+                  "valueDisplayMode": "text"
+
+
+
+                }
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        ]
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 12,
+
+
+
+        "x": 0,
+
+
+
+        "y": 9
+
+
+
+      },
+
+
+
+      "id": 3,
+
+
+
+      "options": {
+
+
+
+        "cellHeight": "sm",
+
+
+
+        "footer": {
+
+
+
+          "countRows": false,
+
+
+
+          "fields": "",
+
+
+
+          "reducer": [
+
+
+
+            "sum"
+
+
+
+          ],
+
+
+
+          "show": false
+
+
+
+        },
+
+
+
+        "showHeader": true
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "uploadFile.name",
+
+
+
+              "text": "File name ",
+
+
+
+              "type": "string"
+
+
+
+            },
+
+
+
+            {
+
+
+
+              "selector": "uploadFile.size",
+
+
+
+              "text": "File size",
+
+
+
+              "type": "number"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filters": [
+
+
+
+            {
+
+
+
+              "field": "File size",
+
+
+
+              "operator": "notequals",
+
+
+
+              "value": [
+
+
+
+                "null"
+
+
+
+              ]
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "format": "table",
+
+
+
+          "global_query_id": "",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*].content[*]",
+
+
+
+          "source": "url",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "Uploaded file",
+
+
+
+      "type": "table"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "color": {
+
+
+
+            "mode": "thresholds"
+
+
+
+          },
+
+
+
+          "custom": {
+
+
+
+            "hideFrom": {
+
+
+
+              "legend": false,
+
+
+
+              "tooltip": false,
+
+
+
+              "viz": false
+
+
+
+            }
+
+
+
+          },
+
+
+
+          "fieldMinMax": false,
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "percentage",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "green",
+
+
+
+                "value": null
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "red",
+
+
+
+                "value": 80
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "#EAB839",
+
+
+
+                "value": 90
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 12,
+
+
+
+        "x": 12,
+
+
+
+        "y": 9
+
+
+
+      },
+
+
+
+      "id": 7,
+
+
+
+      "options": {
+
+
+
+        "basemap": {
+
+
+
+          "config": {},
+
+
+
+          "name": "Layer 0",
+
+
+
+          "type": "default"
+
+
+
+        },
+
+
+
+        "controls": {
+
+
+
+          "mouseWheelZoom": true,
+
+
+
+          "showAttribution": true,
+
+
+
+          "showDebug": false,
+
+
+
+          "showMeasure": false,
+
+
+
+          "showScale": false,
+
+
+
+          "showZoom": true
+
+
+
+        },
+
+
+
+        "layers": [
+
+
+
+          {
+
+
+
+            "config": {
+
+
+
+              "blur": 15,
+
+
+
+              "radius": 5,
+
+
+
+              "weight": {
+
+
+
+                "fixed": 1,
+
+
+
+                "max": 1,
+
+
+
+                "min": 0
+
+
+
+              }
+
+
+
+            },
+
+
+
+            "location": {
+
+
+
+              "mode": "lookup"
+
+
+
+            },
+
+
+
+            "name": "Layer 1",
+
+
+
+            "tooltip": true,
+
+
+
+            "type": "heatmap"
+
+
+
+          }
+
+
+
+        ],
+
+
+
+        "tooltip": {
+
+
+
+          "mode": "details"
+
+
+
+        },
+
+
+
+        "view": {
+
+
+
+          "allLayers": true,
+
+
+
+          "id": "zero",
+
+
+
+          "lat": 0,
+
+
+
+          "lon": 0,
+
+
+
+          "zoom": 1
+
+
+
+        }
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "country",
+
+
+
+              "text": "country",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filters": [
+
+
+
+            {
+
+
+
+              "field": "country",
+
+
+
+              "operator": "notequals",
+
+
+
+              "value": [
+
+
+
+                "null"
+
+
+
+              ]
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "format": "dataframe",
+
+
+
+          "global_query_id": "",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*].content[*]",
+
+
+
+          "source": "url",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "Connection per Country",
+
+
+
+      "type": "geomap"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "collapsed": false,
+
+
+
+      "gridPos": {
+
+
+
+        "h": 1,
+
+
+
+        "w": 24,
+
+
+
+        "x": 0,
+
+
+
+        "y": 17
+
+
+
+      },
+
+
+
+      "id": 9,
+
+
+
+      "panels": [],
+
+
+
+      "title": "VCI servers",
+
+
+
+      "type": "row"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "description": "",
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "percentage",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "green",
+
+
+
+                "value": null
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "orange",
+
+
+
+                "value": 70
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "red",
+
+
+
+                "value": 85
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 12,
+
+
+
+        "x": 0,
+
+
+
+        "y": 18
+
+
+
+      },
+
+
+
+      "id": 10,
+
+
+
+      "options": {
+
+
+
+        "minVizHeight": 75,
+
+
+
+        "minVizWidth": 75,
+
+
+
+        "orientation": "auto",
+
+
+
+        "reduceOptions": {
+
+
+
+          "calcs": [
+
+
+
+            "lastNotNull"
+
+
+
+          ],
+
+
+
+          "fields": "/^nombre VCI$/",
+
+
+
+          "values": false
+
+
+
+        },
+
+
+
+        "showThresholdLabels": false,
+
+
+
+        "showThresholdMarkers": true,
+
+
+
+        "sizing": "auto"
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "totalElements",
+
+
+
+              "text": "nombre VCI",
+
+
+
+              "type": "number"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filters": [],
+
+
+
+          "format": "table",
+
+
+
+          "global_query_id": "",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*]",
+
+
+
+          "source": "url",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/vciservers",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "Nombre Vci",
+
+
+
+      "type": "gauge"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "custom": {
+
+
+
+            "align": "auto",
+
+
+
+            "cellOptions": {
+
+
+
+              "type": "auto"
+
+
+
+            },
+
+
+
+            "inspect": false
+
+
+
+          },
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "absolute",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "green",
+
+
+
+                "value": null
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "red",
+
+
+
+                "value": 80
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 12,
+
+
+
+        "x": 12,
+
+
+
+        "y": 18
+
+
+
+      },
+
+
+
+      "id": 11,
+
+
+
+      "options": {
+
+
+
+        "cellHeight": "sm",
+
+
+
+        "footer": {
+
+
+
+          "countRows": false,
+
+
+
+          "fields": "",
+
+
+
+          "reducer": [
+
+
+
+            "sum"
+
+
+
+          ],
+
+
+
+          "show": false
+
+
+
+        },
+
+
+
+        "showHeader": true,
+
+
+
+        "sortBy": []
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "name",
+
+
+
+              "text": "VCI name",
+
+
+
+              "type": "string"
+
+
+
+            },
+
+
+
+            {
+
+
+
+              "selector": "status",
+
+
+
+              "text": "VCI status",
+
+
+
+              "type": "string"
+
+
+
+            },
+
+
+
+            {
+
+
+
+              "selector": "rrdi",
+
+
+
+              "text": "rrdi",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filters": [],
+
+
+
+          "format": "dataframe",
+
+
+
+          "global_query_id": "",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*].content[*]",
+
+
+
+          "source": "url",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/vciservers",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "type": "table"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "collapsed": false,
+
+
+
+      "gridPos": {
+
+
+
+        "h": 1,
+
+
+
+        "w": 24,
+
+
+
+        "x": 0,
+
+
+
+        "y": 26
+
+
+
+      },
+
+
+
+      "id": 25,
+
+
+
+      "panels": [],
+
+
+
+      "title": "Brand sessions",
+
+
+
+      "type": "row"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "description": "",
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "color": {
+
+
+
+            "mode": "palette-classic"
+
+
+
+          },
+
+
+
+          "custom": {
+
+
+
+            "hideFrom": {
+
+
+
+              "legend": false,
+
+
+
+              "tooltip": false,
+
+
+
+              "viz": false
+
+
+
+            }
+
+
+
+          },
+
+
+
+          "mappings": []
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 12,
+
+
+
+        "x": 0,
+
+
+
+        "y": 27
+
+
+
+      },
+
+
+
+      "id": 17,
+
+
+
+      "options": {
+
+
+
+        "displayLabels": [
+
+
+
+          "percent"
+
+
+
+        ],
+
+
+
+        "legend": {
+
+
+
+          "calcs": [],
+
+
+
+          "displayMode": "table",
+
+
+
+          "placement": "right",
+
+
+
+          "showLegend": true,
+
+
+
+          "values": []
+
+
+
+        },
+
+
+
+        "pieType": "pie",
+
+
+
+        "reduceOptions": {
+
+
+
+          "calcs": [
+
+
+
+            "lastNotNull"
+
+
+
+          ],
+
+
+
+          "fields": "/.*/",
+
+
+
+          "values": false
+
+
+
+        },
+
+
+
+        "tooltip": {
+
+
+
+          "mode": "single",
+
+
+
+          "sort": "none"
+
+
+
+        }
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "brand",
+
+
+
+              "text": "brand",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filterExpression": "brand == \"PEUGEOT\"",
+
+
+
+          "filters": [],
+
+
+
+          "format": "dataframe",
+
+
+
+          "global_query_id": "",
+
+
+
+          "parser": "backend",
+
+
+
+          "refId": "PEUGEOT",
+
+
+
+          "root_selector": "$.data[*].content[*].vehicleSessions[*]",
+
+
+
+          "source": "url",
+
+
+
+          "summarizeBy": "",
+
+
+
+          "summarizeExpression": "count(brand)",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        },
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "brand",
+
+
+
+              "text": "brand",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filterExpression": "brand == \"CITROËN\"",
+
+
+
+          "filters": [],
+
+
+
+          "format": "table",
+
+
+
+          "global_query_id": "",
+
+
+
+          "hide": false,
+
+
+
+          "parser": "backend",
+
+
+
+          "refId": "CITROËN",
+
+
+
+          "root_selector": "$.data[*].content[*].vehicleSessions[*]",
+
+
+
+          "source": "url",
+
+
+
+          "summarizeBy": "",
+
+
+
+          "summarizeExpression": "count(brand)",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        },
+
+
+
+        {
+
+
+
+          "columns": [],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filterExpression": "brand == \"DS AUTOMOBILES\"",
+
+
+
+          "filters": [],
+
+
+
+          "format": "table",
+
+
+
+          "global_query_id": "",
+
+
+
+          "hide": false,
+
+
+
+          "parser": "backend",
+
+
+
+          "refId": "DS AUTOMOBILES",
+
+
+
+          "root_selector": "$.data[*].content[*].vehicleSessions[*]",
+
+
+
+          "source": "url",
+
+
+
+          "summarizeExpression": "count(brand)",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "Brand list",
+
+
+
+      "type": "piechart"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "custom": {
+
+
+
+            "align": "auto",
+
+
+
+            "cellOptions": {
+
+
+
+              "type": "auto"
+
+
+
+            },
+
+
+
+            "inspect": false
+
+
+
+          },
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "absolute",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "green",
+
+
+
+                "value": null
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "red",
+
+
+
+                "value": 80
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 12,
+
+
+
+        "x": 12,
+
+
+
+        "y": 27
+
+
+
+      },
+
+
+
+      "id": 2,
+
+
+
+      "options": {
+
+
+
+        "cellHeight": "sm",
+
+
+
+        "footer": {
+
+
+
+          "countRows": false,
+
+
+
+          "fields": "",
+
+
+
+          "reducer": [
+
+
+
+            "sum"
+
+
+
+          ],
+
+
+
+          "show": false
+
+
+
+        },
+
+
+
+        "showHeader": true,
+
+
+
+        "sortBy": [
+
+
+
+          {
+
+
+
+            "desc": true,
+
+
+
+            "displayName": "VCI"
+
+
+
+          }
+
+
+
+        ]
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "vciServerName",
+
+
+
+              "text": "VCI",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filters": [],
+
+
+
+          "format": "dataframe",
+
+
+
+          "global_query_id": "",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*].content[*].productInstanceInfo",
+
+
+
+          "source": "url",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "Liste des VCI",
+
+
+
+      "type": "table"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "grafana",
+
+
+
+        "uid": "grafana"
+
+
+
+      },
+
+
+
+      "description": "",
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 5,
+
+
+
+        "x": 0,
+
+
+
+        "y": 35
+
+
+
+      },
+
+
+
+      "id": 21,
+
+
+
+      "options": {
+
+
+
+        "code": {
+
+
+
+          "language": "plaintext",
+
+
+
+          "showLineNumbers": false,
+
+
+
+          "showMiniMap": false
+
+
+
+        },
+
+
+
+        "content": "\n<img src=\"https://upload.wikimedia.org/wikipedia/fr/9/9d/Peugeot_2021_Logo.svg\" style=\"width: 350px; height: 250px;\">",
+
+
+
+        "mode": "html"
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "datasource": {
+
+
+
+            "type": "datasource",
+
+
+
+            "uid": "grafana"
+
+
+
+          },
+
+
+
+          "queryType": "randomWalk",
+
+
+
+          "refId": "A"
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "Peugeot",
+
+
+
+      "transparent": true,
+
+
+
+      "type": "text"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "custom": {
+
+
+
+            "align": "auto",
+
+
+
+            "cellOptions": {
+
+
+
+              "type": "auto"
+
+
+
+            },
+
+
+
+            "inspect": false
+
+
+
+          },
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "absolute",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "green",
+
+
+
+                "value": null
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "red",
+
+
+
+                "value": 80
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 18,
+
+
+
+        "x": 6,
+
+
+
+        "y": 35
+
+
+
+      },
+
+
+
+      "id": 5,
+
+
+
+      "options": {
+
+
+
+        "cellHeight": "sm",
+
+
+
+        "footer": {
+
+
+
+          "countRows": false,
+
+
+
+          "fields": "",
+
+
+
+          "reducer": [
+
+
+
+            "sum"
+
+
+
+          ],
+
+
+
+          "show": false
+
+
+
+        },
+
+
+
+        "showHeader": true
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "model",
+
+
+
+              "text": "model",
+
+
+
+              "type": "string"
+
+
+
+            },
+
+
+
+            {
+
+
+
+              "selector": "brand",
+
+
+
+              "text": "brand ",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filters": [
+
+
+
+            {
+
+
+
+              "field": "brand ",
+
+
+
+              "operator": "equals",
+
+
+
+              "value": [
+
+
+
+                "PEUGEOT"
+
+
+
+              ]
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "format": "dataframe",
+
+
+
+          "global_query_id": "",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*].content[*].vehicleSessions[*]",
+
+
+
+          "source": "url",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "PEUGEOT Session",
+
+
+
+      "type": "table"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "grafana",
+
+
+
+        "uid": "grafana"
+
+
+
+      },
+
+
+
+      "description": "",
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 5,
+
+
+
+        "x": 0,
+
+
+
+        "y": 43
+
+
+
+      },
+
+
+
+      "id": 22,
+
+
+
+      "options": {
+
+
+
+        "code": {
+
+
+
+          "language": "plaintext",
+
+
+
+          "showLineNumbers": false,
+
+
+
+          "showMiniMap": false
+
+
+
+        },
+
+
+
+        "content": "\n<img src=\"https://upload.wikimedia.org/wikipedia/fr/e/e9/Citroen_logo.svg\" style=\"width: 400px; height: 200px;\">",
+
+
+
+        "mode": "html"
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "datasource": {
+
+
+
+            "type": "datasource",
+
+
+
+            "uid": "grafana"
+
+
+
+          },
+
+
+
+          "queryType": "randomWalk",
+
+
+
+          "refId": "A"
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "Citroen",
+
+
+
+      "transparent": true,
+
+
+
+      "type": "text"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "custom": {
+
+
+
+            "align": "auto",
+
+
+
+            "cellOptions": {
+
+
+
+              "type": "auto"
+
+
+
+            },
+
+
+
+            "inspect": false
+
+
+
+          },
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "absolute",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "green",
+
+
+
+                "value": null
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "red",
+
+
+
+                "value": 80
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 18,
+
+
+
+        "x": 6,
+
+
+
+        "y": 43
+
+
+
+      },
+
+
+
+      "id": 6,
+
+
+
+      "options": {
+
+
+
+        "cellHeight": "sm",
+
+
+
+        "footer": {
+
+
+
+          "countRows": false,
+
+
+
+          "fields": "",
+
+
+
+          "reducer": [
+
+
+
+            "sum"
+
+
+
+          ],
+
+
+
+          "show": false
+
+
+
+        },
+
+
+
+        "showHeader": true
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "model",
+
+
+
+              "text": "model",
+
+
+
+              "type": "string"
+
+
+
+            },
+
+
+
+            {
+
+
+
+              "selector": "brand",
+
+
+
+              "text": "brand",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filters": [
+
+
+
+            {
+
+
+
+              "field": "brand",
+
+
+
+              "operator": "equals",
+
+
+
+              "value": [
+
+
+
+                "CITROËN"
+
+
+
+              ]
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "format": "table",
+
+
+
+          "global_query_id": "",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*].content[*].vehicleSessions[*]",
+
+
+
+          "source": "url",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "CITROËN Sessions",
+
+
+
+      "type": "table"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "grafana",
+
+
+
+        "uid": "grafana"
+
+
+
+      },
+
+
+
+      "description": "",
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 5,
+
+
+
+        "x": 0,
+
+
+
+        "y": 51
+
+
+
+      },
+
+
+
+      "id": 23,
+
+
+
+      "options": {
+
+
+
+        "code": {
+
+
+
+          "language": "plaintext",
+
+
+
+          "showLineNumbers": false,
+
+
+
+          "showMiniMap": false
+
+
+
+        },
+
+
+
+        "content": "\n<img src=\"https://logo-marque.com/wp-content/uploads/2021/08/DS-Automobiles-Logo.png\" style=\"width: 400px; height: 200px;\">",
+
+
+
+        "mode": "html"
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "datasource": {
+
+
+
+            "type": "datasource",
+
+
+
+            "uid": "grafana"
+
+
+
+          },
+
+
+
+          "queryType": "randomWalk",
+
+
+
+          "refId": "A"
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "DS Automobile",
+
+
+
+      "transparent": true,
+
+
+
+      "type": "text"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "custom": {
+
+
+
+            "align": "auto",
+
+
+
+            "cellOptions": {
+
+
+
+              "type": "auto"
+
+
+
+            },
+
+
+
+            "inspect": false
+
+
+
+          },
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "absolute",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "green",
+
+
+
+                "value": null
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "red",
+
+
+
+                "value": 80
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 18,
+
+
+
+        "x": 6,
+
+
+
+        "y": 51
+
+
+
+      },
+
+
+
+      "id": 24,
+
+
+
+      "options": {
+
+
+
+        "cellHeight": "sm",
+
+
+
+        "footer": {
+
+
+
+          "countRows": false,
+
+
+
+          "fields": "",
+
+
+
+          "reducer": [
+
+
+
+            "sum"
+
+
+
+          ],
+
+
+
+          "show": false
+
+
+
+        },
+
+
+
+        "showHeader": true
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "model",
+
+
+
+              "text": "model",
+
+
+
+              "type": "string"
+
+
+
+            },
+
+
+
+            {
+
+
+
+              "selector": "brand",
+
+
+
+              "text": "brand",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filters": [
+
+
+
+            {
+
+
+
+              "field": "brand",
+
+
+
+              "operator": "equals",
+
+
+
+              "value": [
+
+
+
+                "DS AUTOMOBILES"
+
+
+
+              ]
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "format": "table",
+
+
+
+          "global_query_id": "",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*].content[*].vehicleSessions[*]",
+
+
+
+          "source": "url",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "DS AUTOMOBILES Sessions",
+
+
+
+      "type": "table"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "custom": {
+
+
+
+            "align": "auto",
+
+
+
+            "cellOptions": {
+
+
+
+              "type": "auto"
+
+
+
+            },
+
+
+
+            "inspect": false
+
+
+
+          },
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "absolute",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "green",
+
+
+
+                "value": null
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "red",
+
+
+
+                "value": 80
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": [
+
+
+
+          {
+
+
+
+            "matcher": {
+
+
+
+              "id": "byName",
+
+
+
+              "options": "identification Date"
+
+
+
+            },
+
+
+
+            "properties": [
+
+
+
+              {
+
+
+
+                "id": "custom.width"
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        ]
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 24,
+
+
+
+        "x": 0,
+
+
+
+        "y": 59
+
+
+
+      },
+
+
+
+      "id": 4,
+
+
+
+      "options": {
+
+
+
+        "cellHeight": "sm",
+
+
+
+        "footer": {
+
+
+
+          "countRows": false,
+
+
+
+          "fields": "",
+
+
+
+          "reducer": [
+
+
+
+            "sum"
+
+
+
+          ],
+
+
+
+          "show": false
+
+
+
+        },
+
+
+
+        "showHeader": true,
+
+
+
+        "sortBy": [
+
+
+
+          {
+
+
+
+            "desc": true,
+
+
+
+            "displayName": "identification Date"
+
+
+
+          }
+
+
+
+        ]
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "brand",
+
+
+
+              "text": "brand",
+
+
+
+              "type": "string"
+
+
+
+            },
+
+
+
+            {
+
+
+
+              "selector": "model",
+
+
+
+              "text": "model",
+
+
+
+              "type": "string"
+
+
+
+            },
+
+
+
+            {
+
+
+
+              "selector": "identificationDate",
+
+
+
+              "text": "identification Date",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filters": [],
+
+
+
+          "format": "dataframe",
+
+
+
+          "global_query_id": "",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*].content[*].vehicleSessions[*]",
+
+
+
+          "source": "url",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "Vehicle Sessions",
+
+
+
+      "type": "table"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "collapsed": false,
+
+
+
+      "gridPos": {
+
+
+
+        "h": 1,
+
+
+
+        "w": 24,
+
+
+
+        "x": 0,
+
+
+
+        "y": 67
+
+
+
+      },
+
+
+
+      "id": 12,
+
+
+
+      "panels": [],
+
+
+
+      "title": "Support session",
+
+
+
+      "type": "row"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "percentage",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "green",
+
+
+
+                "value": null
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "orange",
+
+
+
+                "value": 70
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "red",
+
+
+
+                "value": 85
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 8,
+
+
+
+        "x": 0,
+
+
+
+        "y": 68
+
+
+
+      },
+
+
+
+      "id": 13,
+
+
+
+      "options": {
+
+
+
+        "minVizHeight": 75,
+
+
+
+        "minVizWidth": 75,
+
+
+
+        "orientation": "auto",
+
+
+
+        "reduceOptions": {
+
+
+
+          "calcs": [
+
+
+
+            "lastNotNull"
+
+
+
+          ],
+
+
+
+          "fields": "",
+
+
+
+          "values": false
+
+
+
+        },
+
+
+
+        "showThresholdLabels": false,
+
+
+
+        "showThresholdMarkers": true,
+
+
+
+        "sizing": "auto"
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "totalElements",
+
+
+
+              "text": "Nombre session support",
+
+
+
+              "type": "number"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filters": [],
+
+
+
+          "format": "table",
+
+
+
+          "global_query_id": "",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*]",
+
+
+
+          "source": "url",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/support/sessions",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "Nombre session support",
+
+
+
+      "type": "gauge"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "description": "",
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "color": {
+
+
+
+            "mode": "thresholds"
+
+
+
+          },
+
+
+
+          "custom": {
+
+
+
+            "hideFrom": {
+
+
+
+              "legend": false,
+
+
+
+              "tooltip": false,
+
+
+
+              "viz": false
+
+
+
+            }
+
+
+
+          },
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "absolute",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "green",
+
+
+
+                "value": null
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "red",
+
+
+
+                "value": 80
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 16,
+
+
+
+        "x": 8,
+
+
+
+        "y": 68
+
+
+
+      },
+
+
+
+      "id": 14,
+
+
+
+      "options": {
+
+
+
+        "basemap": {
+
+
+
+          "config": {},
+
+
+
+          "name": "Layer 0",
+
+
+
+          "type": "default"
+
+
+
+        },
+
+
+
+        "controls": {
+
+
+
+          "mouseWheelZoom": true,
+
+
+
+          "showAttribution": true,
+
+
+
+          "showDebug": false,
+
+
+
+          "showMeasure": false,
+
+
+
+          "showScale": false,
+
+
+
+          "showZoom": true
+
+
+
+        },
+
+
+
+        "layers": [
+
+
+
+          {
+
+
+
+            "config": {
+
+
+
+              "showLegend": true,
+
+
+
+              "style": {
+
+
+
+                "color": {
+
+
+
+                  "field": " country",
+
+
+
+                  "fixed": "dark-green"
+
+
+
+                },
+
+
+
+                "opacity": 0.4,
+
+
+
+                "rotation": {
+
+
+
+                  "fixed": 0,
+
+
+
+                  "max": 360,
+
+
+
+                  "min": -360,
+
+
+
+                  "mode": "mod"
+
+
+
+                },
+
+
+
+                "size": {
+
+
+
+                  "fixed": 5,
+
+
+
+                  "max": 80,
+
+
+
+                  "min": 2
+
+
+
+                },
+
+
+
+                "symbol": {
+
+
+
+                  "fixed": "img/icons/marker/circle.svg",
+
+
+
+                  "mode": "fixed"
+
+
+
+                },
+
+
+
+                "symbolAlign": {
+
+
+
+                  "horizontal": "center",
+
+
+
+                  "vertical": "center"
+
+
+
+                },
+
+
+
+                "text": {
+
+
+
+                  "fixed": "",
+
+
+
+                  "mode": "field"
+
+
+
+                },
+
+
+
+                "textConfig": {
+
+
+
+                  "fontSize": 12,
+
+
+
+                  "offsetX": 0,
+
+
+
+                  "offsetY": 0,
+
+
+
+                  "textAlign": "center",
+
+
+
+                  "textBaseline": "middle"
+
+
+
+                }
+
+
+
+              }
+
+
+
+            },
+
+
+
+            "filterData": {
+
+
+
+              "id": "byRefId",
+
+
+
+              "options": "A"
+
+
+
+            },
+
+
+
+            "location": {
+
+
+
+              "gazetteer": "public/gazetteer/countries.json",
+
+
+
+              "mode": "lookup"
+
+
+
+            },
+
+
+
+            "name": "Countries",
+
+
+
+            "tooltip": true,
+
+
+
+            "type": "markers"
+
+
+
+          }
+
+
+
+        ],
+
+
+
+        "tooltip": {
+
+
+
+          "mode": "details"
+
+
+
+        },
+
+
+
+        "view": {
+
+
+
+          "allLayers": true,
+
+
+
+          "id": "zero",
+
+
+
+          "lat": 0,
+
+
+
+          "lon": 0,
+
+
+
+          "zoom": 1
+
+
+
+        }
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "assistedCountry",
+
+
+
+              "text": " country",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filters": [],
+
+
+
+          "format": "table",
+
+
+
+          "global_query_id": "",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*].content[*]",
+
+
+
+          "source": "url",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/support/sessions",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "Assisted Country",
+
+
+
+      "type": "geomap"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "description": "",
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "percentage",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "dark-red",
+
+
+
+                "value": null
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 7,
+
+
+
+        "w": 8,
+
+
+
+        "x": 0,
+
+
+
+        "y": 76
+
+
+
+      },
+
+
+
+      "id": 19,
+
+
+
+      "options": {
+
+
+
+        "minVizHeight": 75,
+
+
+
+        "minVizWidth": 75,
+
+
+
+        "orientation": "auto",
+
+
+
+        "reduceOptions": {
+
+
+
+          "calcs": [
+
+
+
+            "lastNotNull"
+
+
+
+          ],
+
+
+
+          "fields": "",
+
+
+
+          "values": false
+
+
+
+        },
+
+
+
+        "showThresholdLabels": false,
+
+
+
+        "showThresholdMarkers": true,
+
+
+
+        "sizing": "auto"
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "status",
+
+
+
+              "text": "status",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "computed_columns": [],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filterExpression": "status == \"CLOSED\" ",
+
+
+
+          "filters": [],
+
+
+
+          "format": "dataframe",
+
+
+
+          "global_query_id": "",
+
+
+
+          "parser": "backend",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*].content[*]",
+
+
+
+          "source": "url",
+
+
+
+          "summarizeExpression": "count(status)",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/support/sessions",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET",
+
+
+
+            "params": []
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "Closed session",
+
+
+
+      "type": "gauge"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "description": "",
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "percentage",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "green",
+
+
+
+                "value": null
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 7,
+
+
+
+        "w": 8,
+
+
+
+        "x": 8,
+
+
+
+        "y": 76
+
+
+
+      },
+
+
+
+      "id": 16,
+
+
+
+      "options": {
+
+
+
+        "minVizHeight": 75,
+
+
+
+        "minVizWidth": 75,
+
+
+
+        "orientation": "auto",
+
+
+
+        "reduceOptions": {
+
+
+
+          "calcs": [
+
+
+
+            "lastNotNull"
+
+
+
+          ],
+
+
+
+          "fields": "",
+
+
+
+          "values": false
+
+
+
+        },
+
+
+
+        "showThresholdLabels": false,
+
+
+
+        "showThresholdMarkers": true,
+
+
+
+        "sizing": "auto"
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "status",
+
+
+
+              "text": "status",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "computed_columns": [],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filterExpression": "status == \"RUNNING\" ",
+
+
+
+          "filters": [],
+
+
+
+          "format": "dataframe",
+
+
+
+          "global_query_id": "",
+
+
+
+          "parser": "backend",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*].content[*]",
+
+
+
+          "source": "url",
+
+
+
+          "summarizeExpression": "count(status)",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/support/sessions",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET",
+
+
+
+            "params": []
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "Running session",
+
+
+
+      "type": "gauge"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "description": "",
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "percentage",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "orange",
+
+
+
+                "value": null
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 7,
+
+
+
+        "w": 8,
+
+
+
+        "x": 16,
+
+
+
+        "y": 76
+
+
+
+      },
+
+
+
+      "id": 18,
+
+
+
+      "options": {
+
+
+
+        "minVizHeight": 75,
+
+
+
+        "minVizWidth": 75,
+
+
+
+        "orientation": "auto",
+
+
+
+        "reduceOptions": {
+
+
+
+          "calcs": [
+
+
+
+            "lastNotNull"
+
+
+
+          ],
+
+
+
+          "fields": "",
+
+
+
+          "values": false
+
+
+
+        },
+
+
+
+        "showThresholdLabels": false,
+
+
+
+        "showThresholdMarkers": true,
+
+
+
+        "sizing": "auto"
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "status",
+
+
+
+              "text": "status",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "computed_columns": [],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filterExpression": "status == \"REQUESTED\" ",
+
+
+
+          "filters": [],
+
+
+
+          "format": "dataframe",
+
+
+
+          "global_query_id": "",
+
+
+
+          "parser": "backend",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*].content[*]",
+
+
+
+          "source": "url",
+
+
+
+          "summarizeExpression": "count(status)",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/support/sessions",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET",
+
+
+
+            "params": []
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "Requested session",
+
+
+
+      "type": "gauge"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "custom": {
+
+
+
+            "align": "auto",
+
+
+
+            "cellOptions": {
+
+
+
+              "type": "auto"
+
+
+
+            },
+
+
+
+            "inspect": false
+
+
+
+          },
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "absolute",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "green",
+
+
+
+                "value": null
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "red",
+
+
+
+                "value": 80
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 7,
+
+
+
+        "w": 24,
+
+
+
+        "x": 0,
+
+
+
+        "y": 83
+
+
+
+      },
+
+
+
+      "id": 15,
+
+
+
+      "options": {
+
+
+
+        "cellHeight": "sm",
+
+
+
+        "footer": {
+
+
+
+          "countRows": false,
+
+
+
+          "fields": "",
+
+
+
+          "reducer": [
+
+
+
+            "sum"
+
+
+
+          ],
+
+
+
+          "show": false
+
+
+
+        },
+
+
+
+        "showHeader": true
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "startDate",
+
+
+
+              "text": "Start date",
+
+
+
+              "type": "timestamp"
+
+
+
+            },
+
+
+
+            {
+
+
+
+              "selector": "endDate",
+
+
+
+              "text": "End date",
+
+
+
+              "type": "string"
+
+
+
+            },
+
+
+
+            {
+
+
+
+              "selector": "assistedRrdi",
+
+
+
+              "text": "assisted Rrdi",
+
+
+
+              "type": "string"
+
+
+
+            },
+
+
+
+            {
+
+
+
+              "selector": "assistorId",
+
+
+
+              "text": "assistorId",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filters": [
+
+
+
+            {
+
+
+
+              "field": "End date",
+
+
+
+              "operator": "notequals",
+
+
+
+              "value": [
+
+
+
+                "null"
+
+
+
+              ]
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "format": "table",
+
+
+
+          "global_query_id": "",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*].content[*]",
+
+
+
+          "source": "url",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/support/sessions",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "Sessions Date",
+
+
+
+      "type": "table"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "collapsed": false,
+
+
+
+      "gridPos": {
+
+
+
+        "h": 1,
+
+
+
+        "w": 24,
+
+
+
+        "x": 0,
+
+
+
+        "y": 90
+
+
+
+      },
+
+
+
+      "id": 26,
+
+
+
+      "panels": [],
+
+
+
+      "title": "Users",
+
+
+
+      "type": "row"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "color": {
+
+
+
+            "mode": "thresholds"
+
+
+
+          },
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "percentage",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "green",
+
+
+
+                "value": null
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "orange",
+
+
+
+                "value": 70
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "red",
+
+
+
+                "value": 85
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 12,
+
+
+
+        "x": 0,
+
+
+
+        "y": 91
+
+
+
+      },
+
+
+
+      "id": 27,
+
+
+
+      "options": {
+
+
+
+        "colorMode": "value",
+
+
+
+        "graphMode": "area",
+
+
+
+        "justifyMode": "auto",
+
+
+
+        "orientation": "auto",
+
+
+
+        "reduceOptions": {
+
+
+
+          "calcs": [
+
+
+
+            "lastNotNull"
+
+
+
+          ],
+
+
+
+          "fields": "",
+
+
+
+          "values": false
+
+
+
+        },
+
+
+
+        "showPercentChange": false,
+
+
+
+        "textMode": "auto",
+
+
+
+        "wideLayout": true
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "userId",
+
+
+
+              "text": "userId",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filters": [],
+
+
+
+          "format": "table",
+
+
+
+          "global_query_id": "",
+
+
+
+          "parser": "backend",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*].content[*]",
+
+
+
+          "source": "url",
+
+
+
+          "summarizeExpression": "count(userId)",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/users/sessions",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "Users",
+
+
+
+      "type": "stat"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "color": {
+
+
+
+            "mode": "thresholds"
+
+
+
+          },
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "percentage",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "text",
+
+
+
+                "value": null
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "orange",
+
+
+
+                "value": 70
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "red",
+
+
+
+                "value": 85
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 8,
+
+
+
+        "w": 12,
+
+
+
+        "x": 12,
+
+
+
+        "y": 91
+
+
+
+      },
+
+
+
+      "id": 28,
+
+
+
+      "options": {
+
+
+
+        "colorMode": "value",
+
+
+
+        "graphMode": "area",
+
+
+
+        "justifyMode": "auto",
+
+
+
+        "orientation": "auto",
+
+
+
+        "reduceOptions": {
+
+
+
+          "calcs": [
+
+
+
+            "lastNotNull"
+
+
+
+          ],
+
+
+
+          "fields": "",
+
+
+
+          "values": false
+
+
+
+        },
+
+
+
+        "showPercentChange": false,
+
+
+
+        "textMode": "auto",
+
+
+
+        "wideLayout": true
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "sessionId",
+
+
+
+              "text": "sessionId",
+
+
+
+              "type": "string"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filters": [],
+
+
+
+          "format": "table",
+
+
+
+          "global_query_id": "",
+
+
+
+          "parser": "backend",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*].content[*].userSessions[*]",
+
+
+
+          "source": "url",
+
+
+
+          "summarizeExpression": "count(sessionId)",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/users/sessions",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "User Sessions",
+
+
+
+      "type": "stat"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "datasource": {
+
+
+
+        "type": "yesoreyeram-infinity-datasource",
+
+
+
+        "uid": "infinity-datasource"
+
+
+
+      },
+
+
+
+      "fieldConfig": {
+
+
+
+        "defaults": {
+
+
+
+          "custom": {
+
+
+
+            "align": "auto",
+
+
+
+            "cellOptions": {
+
+
+
+              "type": "auto"
+
+
+
+            },
+
+
+
+            "inspect": false
+
+
+
+          },
+
+
+
+          "mappings": [],
+
+
+
+          "thresholds": {
+
+
+
+            "mode": "absolute",
+
+
+
+            "steps": [
+
+
+
+              {
+
+
+
+                "color": "green",
+
+
+
+                "value": null
+
+
+
+              },
+
+
+
+              {
+
+
+
+                "color": "red",
+
+
+
+                "value": 80
+
+
+
+              }
+
+
+
+            ]
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "overrides": []
+
+
+
+      },
+
+
+
+      "gridPos": {
+
+
+
+        "h": 7,
+
+
+
+        "w": 24,
+
+
+
+        "x": 0,
+
+
+
+        "y": 99
+
+
+
+      },
+
+
+
+      "id": 29,
+
+
+
+      "options": {
+
+
+
+        "cellHeight": "sm",
+
+
+
+        "footer": {
+
+
+
+          "countRows": false,
+
+
+
+          "fields": "",
+
+
+
+          "reducer": [
+
+
+
+            "sum"
+
+
+
+          ],
+
+
+
+          "show": false
+
+
+
+        },
+
+
+
+        "showHeader": true
+
+
+
+      },
+
+
+
+      "pluginVersion": "10.4.1",
+
+
+
+      "targets": [
+
+
+
+        {
+
+
+
+          "columns": [
+
+
+
+            {
+
+
+
+              "selector": "creationTime",
+
+
+
+              "text": "creationTime",
+
+
+
+              "type": "timestamp"
+
+
+
+            },
+
+
+
+            {
+
+
+
+              "selector": "expirationDate",
+
+
+
+              "text": "expirationDate",
+
+
+
+              "type": "timestamp"
+
+
+
+            },
+
+
+
+            {
+
+
+
+              "selector": "lastAccessTime",
+
+
+
+              "text": "lastAccessTime",
+
+
+
+              "type": "timestamp"
+
+
+
+            }
+
+
+
+          ],
+
+
+
+          "datasource": {
+
+
+
+            "type": "yesoreyeram-infinity-datasource",
+
+
+
+            "uid": "infinity-datasource"
+
+
+
+          },
+
+
+
+          "filters": [],
+
+
+
+          "format": "table",
+
+
+
+          "global_query_id": "",
+
+
+
+          "parser": "backend",
+
+
+
+          "refId": "A",
+
+
+
+          "root_selector": "$.data[*].content[*].userSessions[*]",
+
+
+
+          "source": "url",
+
+
+
+          "summarizeExpression": "",
+
+
+
+          "type": "json",
+
+
+
+          "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/users/sessions",
+
+
+
+          "url_options": {
+
+
+
+            "data": "",
+
+
+
+            "method": "GET"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+      "title": "User Sessions",
+
+
+
+      "type": "table"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "refresh": "",
+
+
+
+  "schemaVersion": 39,
+
+
+
+  "tags": [],
+
+
+
+  "templating": {
+
+
+
+    "list": [
+
+
+
+      {
+
+
+
+        "current": {},
+
+
+
+        "datasource": {
+
+
+
+          "type": "yesoreyeram-infinity-datasource",
+
+
+
+          "uid": "infinity-datasource"
+
+
+
+        },
+
+
+
+        "definition": "infinity-datasource- (infinity) json",
+
+
+
+        "hide": 0,
+
+
+
+        "includeAll": false,
+
+
+
+        "multi": true,
+
+
+
+        "name": "country",
+
+
+
+        "options": [],
+
+
+
+        "query": {
+
+
+
+          "infinityQuery": {
+
+
+
+            "columns": [],
+
+
+
+            "filters": [],
+
+
+
+            "format": "table",
+
+
+
+            "refId": "variable",
+
+
+
+            "root_selector": "$.data[*].content[*].country",
+
+
+
+            "source": "url",
+
+
+
+            "type": "json",
+
+
+
+            "url": "https://dep1-l1.diagoncloud.com/api/http/private/v1/products/instances",
+
+
+
+            "url_options": {
+
+
+
+              "data": "",
+
+
+
+              "method": "GET"
+
+
+
+            }
+
+
+
+          },
+
+
+
+          "query": "",
+
+
+
+          "queryType": "infinity"
+
+
+
+        },
+
+
+
+        "refresh": 1,
+
+
+
+        "regex": "",
+
+
+
+        "skipUrlSync": false,
+
+
+
+        "sort": 0,
+
+
+
+        "type": "query"
+
+
+
+      }
+
+
+
+    ]
+
+
+
+  },
+
+
+
+  "time": {
+
+
+
+    "from": "now-6h",
+
+
+
+    "to": "now"
+
+
+
+  },
+
+
+
+  "timepicker": {},
+
+
+
+  "timezone": "browser",
+
+
+
+  "title": "Diagcloud-Actia",
+
+
+
+  "uid": "edl3qzoermpz4b",
+
+
+
+  "version": 27,
+
+
+
+  "weekStart": ""
+
+
+
+}
