@@ -1,0 +1,176 @@
+- hosts: all
+
+  become: yes
+
+  gather_facts: true
+
+  collections:
+
+    - kubernetes.core
+
+
+
+  tasks:
+
+  - name: verify ssh connectivity
+
+    wait_for:
+
+      host: "{{ansible_host}}"
+
+      port: 22
+
+      state: started
+
+      timeout: 120
+
+
+
+  - name: Update apt package cache
+
+    apt:
+
+      update_cache: yes
+
+
+
+  - name: install dependencies
+
+    apt:
+
+      name:
+
+        - curl
+
+        - unzip
+
+      state: present
+
+
+
+  - name: Install Docker
+
+    apt:
+
+      name: docker.io
+
+      state: present
+
+
+
+#  - name: Add kubectl GPG apt Key
+
+#    apt_key:
+
+#      url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+
+#      state: present
+
+
+
+  - name: Add kubernetes apt repository
+
+    shell: echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.30/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+
+#    ansible.builtin.apt_repository:
+
+#      repo: deb https://apt.kubernetes.io/ kubernetes-xenial main
+
+#      filename: kubernetes
+
+#      state: present
+
+#      update_cache: true
+
+  - name: Install kubectl
+
+    apt:
+
+      name: kubectl
+
+      state: present
+
+
+
+  - name: Install k3d
+
+    shell: curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
+
+
+
+  - name: create Dashboard cluster
+
+#    shell: k3d cluster create servercluster --port "80:80@loadbalancer"
+
+    shell: k3d cluster create dashboardcluster
+
+
+
+
+
+
+
+#  - name: Install helm if not exists
+
+#    unarchive:
+
+#      src: https://get.helm.sh/helm-v3.11.0-linux-amd64.tar.gz
+
+#      dest: /usr/local/bin
+
+#      extra_opts: "--strip-components=1"
+
+#      owner: root
+
+#      group: root
+
+#      mode: 0755
+
+#      remote_src: true
+
+#    args:
+
+#      creates: /usr/local/bin/helm
+
+
+
+  - name: Add prometheus chart
+
+    kubernetes.core.helm_repository:
+
+      name: prometheus
+
+      repo_url: https://prometheus-community.github.io/helm-charts
+
+
+
+  - name: Add grafana chart
+
+    kubernetes.core.helm_repository:
+
+      name: grafana
+
+      repo_url: https://grafana.github.io/helm-charts
+
+
+
+  - name: update Helm repo
+
+    shell: helm repo update
+
+
+
+  - name: Deploy Grafana chart using set values on target
+
+    kubernetes.core.helm:
+
+      name: grafana
+
+      chart_ref: grafana/grafana
+
+      namespace: default
+
+  - name: Provision dashboard
+
+    shell: sudo helm upgrade grafana grafana/grafana -f /home/actia/workspace/myvalues.yaml --set-file dashboards.default.dashboard-name.json=/home/actia/workspace/actiatest.json
+
